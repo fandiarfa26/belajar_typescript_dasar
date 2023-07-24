@@ -9,5 +9,11 @@ describe("Interface", () => {
         seller.name = "Arfabuma";
         console.info(seller);
     });
+    it("should support function interface", () => {
+        const add = (value1, value2) => {
+            return value1 + value2;
+        };
+        expect(add(2, 3)).toBe(5);
+    });
 });
 export {};
