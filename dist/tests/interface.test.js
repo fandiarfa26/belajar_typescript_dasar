@@ -27,5 +27,20 @@ describe("Interface", () => {
         expect(dictionary["name"]).toBe("Fandi");
         expect(dictionary["country"]).toBe("Indonesia");
     });
+    it("should support extending interface", () => {
+        const employee = {
+            id: "1",
+            name: "Fandi",
+            division: "IT",
+        };
+        console.info(employee);
+        const manager = {
+            id: "1",
+            name: "Arfabuma",
+            division: "IT",
+            numberOfEmployees: 10,
+        };
+        console.info(manager);
+    });
 });
 export {};
