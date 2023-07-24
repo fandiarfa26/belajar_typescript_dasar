@@ -58,5 +58,14 @@ describe("Interface", () => {
         };
         console.info(domain);
     });
+    it("should support type assertion", () => {
+        const person = {
+            name: "Fandi",
+            age: 25,
+        };
+        const person2 = person;
+        //person2.sayHello("test"); // gagal karena sudah diganti dgn person yg baru
+        console.info(person2);
+    });
 });
 export {};
