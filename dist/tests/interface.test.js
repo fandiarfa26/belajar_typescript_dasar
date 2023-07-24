@@ -15,5 +15,17 @@ describe("Interface", () => {
         };
         expect(add(2, 3)).toBe(5);
     });
+    it("should support indexable interface", () => {
+        const names = ["Fandi", "Arfa", "Buma"];
+        console.info(names);
+    });
+    it("should support indexable interface for non number index", () => {
+        const dictionary = {
+            name: "Fandi",
+            country: "Indonesia",
+        };
+        expect(dictionary["name"]).toBe("Fandi");
+        expect(dictionary["country"]).toBe("Indonesia");
+    });
 });
 export {};
