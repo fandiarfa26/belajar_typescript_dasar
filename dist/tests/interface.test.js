@@ -51,5 +51,12 @@ describe("Interface", () => {
         };
         console.info(person.sayHello("Mitha"));
     });
+    it("should support intersection type", () => {
+        const domain = {
+            id: "1",
+            name: "Fandi",
+        };
+        console.info(domain);
+    });
 });
 export {};
